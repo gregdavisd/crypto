@@ -23,8 +23,8 @@ export default function Attribution({ attribution }) {
   return (
     <>
       <CustomHead
-        title="Attribution – Web3 is Going Just Great"
-        description="Attribution for text, icons, and images used in the Web3 is Going Just Great project"
+        title="Attribution – "
+        description="Attribution for text, images, and icons used on this site."
         urlPath="attribution"
       />
       <SimpleHeader className="attribution-header">Attribution</SimpleHeader>
@@ -42,12 +42,6 @@ export default function Attribution({ attribution }) {
             . Feel free to reuse posts on this site under those terms.
           </p>
           <p>
-            There doesn't seem to be a great way to convey this with a license,
-            but under <i>no</i> circumstance do I wish for my work to be used in
-            NFTs, or in any other crypto projects. Do whatever else with it you
-            want. If someone claims to have gotten consent from me to make NFTs
-            that incorporate text/screenshots/links/etc. to this project,
-            they're lying.
           </p>
           <p>
             Source code is{" "}
@@ -60,7 +54,7 @@ export default function Attribution({ attribution }) {
             </ExternalLink>
             .
           </p>
-          <p>Most text was written by Molly White.</p>
+          <p>Most text was written by.</p>
           <h3>Additional text and entries contributed by</h3>
           <ul>
             {attribution.entries.entries.map((entry, ind) => {
@@ -79,96 +73,6 @@ export default function Attribution({ attribution }) {
                 </li>
               );
             })}
-          </ul>
-          <p>
-            Thanks also to anyone who{" "}
-            <ExternalLink href="https://github.com/molly/web3-is-going-great">
-              contributed PRs on GitHub
-            </ExternalLink>
-            .
-          </p>
-          <h3>Monkey illustration created from</h3>
-          <ul>
-            <li>
-              <ExternalLink href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/5262">
-                <span>#5262</span>
-              </ExternalLink>
-              <span> from OpenSea</span>
-            </li>
-            <li>
-              <ExternalLink href="https://icons8.com/illustrations/illustration/burgundy-123">
-                Earth illustration
-              </ExternalLink>
-              <span> by </span>
-              <ExternalLink href="https://icons8.com/illustrations/author/603d1fd6123f9916a4db9ee6">
-                <span>Irina Molchanova</span>
-              </ExternalLink>
-              <span> from </span>
-              <ExternalLink href="https://icons8.com/illustrations">
-                <span>icons8</span>
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://icons8.com/illustrations/illustration/burgundy-fire-1">
-                Flame illustration
-              </ExternalLink>
-              <span> by </span>
-              <ExternalLink href="https://icons8.com/illustrations/author/603d1fd6123f9916a4db9ee6">
-                <span>Irina Molchanova</span>
-              </ExternalLink>
-              <span> from </span>
-              <ExternalLink href="https://icons8.com/illustrations">
-                <span>icons8</span>
-              </ExternalLink>
-            </li>
-          </ul>
-          <h3>Icons</h3>
-          <ul>
-            <li>
-              <ExternalLink href="https://icons8.com/icon/93275/delete-message">
-                <span>Delete Message</span>
-              </ExternalLink>
-              <span> icon by </span>
-              <ExternalLink href="https://icons8.com">
-                <span>Icons8</span>
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://icons8.com/icon/zq5OEurKP6Ip/robber">
-                <span>Robber</span>
-              </ExternalLink>
-              <span> icon by </span>
-              <ExternalLink href="https://icons8.com">
-                <span>Icons8</span>
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://icons8.com/icon/9grWu5NGDWPh/rug">
-                <span>Rug</span>
-              </ExternalLink>
-              <span> icon by </span>
-              <ExternalLink href="https://icons8.com">
-                <span>Icons8</span>
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://icons8.com/icon/36931/sun-glasses">
-                <span>Sunglasses</span>
-              </ExternalLink>
-              <span> icon by </span>
-              <ExternalLink href="https://icons8.com">
-                <span>Icons8</span>
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://icons8.com/icon/95327/wtf">
-                <span>WTF</span>
-              </ExternalLink>
-              <span> icon by </span>
-              <ExternalLink href="https://icons8.com">
-                <span>Icons8</span>
-              </ExternalLink>
-            </li>
           </ul>
           <h3>Images</h3>
           <ul>

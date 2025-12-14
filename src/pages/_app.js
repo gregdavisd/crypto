@@ -23,13 +23,13 @@ function CustomApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title key="title">Web3 is Going Just Great</title>
+        <title key="title">Site is Going Just Great</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
           key="description"
-          content="A timeline recording only some of the many disasters happening in crypto, decentralized finance, NFTs, and other blockchain-based projects."
+          content="A timeline recording..."
         />
         <meta name="author" content="Molly White" />
         <meta name="msapplication-TileColor" content="#603cba" />
@@ -38,28 +38,28 @@ function CustomApp({ Component, pageProps }) {
         <meta
           property="og:url"
           key="ogurl"
-          content="https://web3isgoinggreat.com/"
+          content="https://localhost/"
         />
         <meta
           property="og:title"
           key="ogtitle"
-          content="Web3 is Going Just Great"
+          content="Title"
         />
         <meta property="og:type" key="ogtype" content="website" />
         <meta
           property="og:description"
           key="ogdescription"
-          content="A timeline recording only some of the many disasters happening in crypto, decentralized finance, NFTs, and other blockchain-based projects."
+          content="A timeline recording..."
         />
         <meta
           property="og:image"
           key="ogimage"
-          content="https://primary-cdn.web3isgoinggreat.com/monkey-og.png"
+          content="https://primary-cdn.localhost/monkey-og.png"
         />
         <meta
           property="og:image:alt"
           key="ogimagealt"
-          content="Illustration: A sad-looking Bored Ape Yacht Club NFT monkey looks at a world engulfed in flames. Text next to it says 'Web3 is Going Just Great.'"
+          content="Illustration:"
         />
         <meta property="og:image:width" key="ogwidth" content="1200" />
         <meta property="og:image:height" key="ogheight" content="630" />
@@ -68,31 +68,31 @@ function CustomApp({ Component, pageProps }) {
           key="twittercard"
           content="summary_large_image"
         />
-        <meta name="twitter:creator" content="@molly0xfff" />
-        <meta name="twitter:creator:id" content="545445165" />
-        <meta name="twitter:site" content="@web3isgreat" />
-        <meta name="twitter:site:id" content="1477342011875381251" />
+        <meta name="twitter:creator" content="@" />
+        <meta name="twitter:creator:id" content="" />
+        <meta name="twitter:site" content="@" />
+        <meta name="twitter:site:id" content="" />
         <meta
           name="twitter:title"
           key="twittertitle"
-          content="Web3 is Going Just Great"
+          content="Site is Going Just Great"
         />
         <meta
           name="twitter:description"
           key="twitterdescription"
-          content="A timeline recording only some of the many disasters happening in crypto, decentralized finance, NFTs, and other blockchain-based projects."
+          content="A timeline recording..."
         />
         <meta
           name="twitter:image"
           key="twitterimage"
-          content="https://primary-cdn.web3isgoinggreat.com/monkey-twitter.png"
+          content="https://primary-cdn.localhost/monkey-twitter.png"
         />
         <meta
           name="twitter:image:alt"
           key="twitterimagealt"
-          content="Illustration: A sad-looking Bored Ape Yacht Club NFT monkey looks at a world engulfed in flames. Text next to it says 'Web3 is Going Just Great.'"
+          content="Illustration:"
         />
-        <meta name="fediverse:creator" content="@molly0xfff@hachyderm.io" />
+        <meta name="fediverse:creator" content="@@hachyderm.io" />
       </Head>
       <QueryClientProvider client={queryClient}>
         <AppProvider>

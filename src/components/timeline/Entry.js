@@ -153,7 +153,7 @@ export default function Entry({
       return (
         <Link
           href={noJsPermalink}
-          data-url={`https://www.web3isgoinggreat.com/?id=${entry.readableId}`}
+          data-url={`https://localhost/?id=${entry.readableId}`}
         >
           <i className="fas fa-link" title="Permalink" />
         </Link>
@@ -188,7 +188,7 @@ export default function Entry({
           {"socialPostIds" in entry && "twitter" in entry.socialPostIds && (
             <li>
               <a
-                href={`https://twitter.com/web3isgreat/status/${entry.socialPostIds.twitter}`}
+                href={`https://twitter.com//status/${entry.socialPostIds.twitter}`}
                 target="_blank"
                 rel="noopener"
                 title="Tweet link"

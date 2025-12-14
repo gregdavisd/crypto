@@ -53,7 +53,7 @@ export async function getServerSideProps(context) {
       startDate: startDate || null,
       endDate: endDate || null,
       dateRangeParam: dateRange || null,
-      scamTotal: metadata.griftTotal,
+      scamTotal: metadata?.griftTotal || 0,
       sortKey: sortKey || null,
       sortDirection: sortDirection || null,
     },

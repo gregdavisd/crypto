@@ -12,7 +12,7 @@ import { getMoney } from "../db/money";
 import BackBar from "../components/BackBar";
 import CustomHead from "../components/CustomHead";
 import DonationsBar from "../components/DonationsBar";
-import ExternalLink from "../components/ExternalLink";
+//import ExternalLink from "../components/ExternalLink";
 import Footer from "../components/Footer";
 import SimpleHeader from "../components/SimpleHeader";
 
@@ -88,7 +88,7 @@ export default function Contribute({ money }) {
     <>
       <CustomHead
         title="Contribute"
-        description="Contribute content to Web3 is Going Just Great, and see how to donate."
+        description="Contribute"
         urlPath="contribute"
       />
       <SimpleHeader>Contribute</SimpleHeader>
@@ -97,51 +97,11 @@ export default function Contribute({ money }) {
         <article className="generic-page longform-text">
           <h2>Suggest an addition or change</h2>
           <p>
-            The best and quickest way to suggest an addition or change to this
-            timeline is via Github Issue.{" "}
-            <ExternalLink href="https://github.com/molly/web3-is-going-great/issues/new?assignees=&labels=bug%2Ctriage&template=new-entry.yml&title=%5BNEW%5D%3A+">
-              <span>Suggest a new entry</span>
-            </ExternalLink>
-            , or{" "}
-            <ExternalLink href="https://github.com/molly/web3-is-going-great/issues/new?assignees=&labels=&template=change-to-existing-entry.md&title=%5BEDIT%5D">
-              suggest a change to an existing entry.
-            </ExternalLink>
           </p>
           <p>
-            If Github's not for you, you can also DM or tweet at me on my{" "}
-            <ExternalLink href="https://twitter.com/molly0xFFF">
-              @molly0xFFF
-            </ExternalLink>{" "}
-            account (I often miss tweets to the{" "}
-            <ExternalLink href="https://twitter.com/web3isgreat">
-              @web3isgreat
-            </ExternalLink>{" "}
-            account!) For the Mastodon users, you can toot at{" "}
-            <ExternalLink href="https://hachyderm.io/@molly0xfff">
-              @molly0xfff@hachyderm.io
-            </ExternalLink>
-            . Make sure to send me a link to reporting about any event you're
-            hoping to see on the timeline.
           </p>
           <h2>Donate</h2>
           <p>
-            If you would like to support my work, which includes this website, I
-            have a newsletter called{" "}
-            <ExternalLink href="https://citationneeded.news/">
-              <i>Citation Needed</i>
-            </ExternalLink>{" "}
-            where you can sign up for a pay-what-you-want subscription . You can
-            also make one-off donations via{" "}
-            <a href="https://account.venmo.com/u/MollyWhite">Venmo</a>,{" "}
-            <a href="https://cash.app/$molly0xfff">Cash App</a>, or{" "}
-            <a href="https://www.paypal.com/donate/?business=3RM66P9NEQNFA&no_recurring=0&currency_code=USD">
-              Paypal
-            </a>
-            . If you wish to make a one-off donation specifically towards the
-            upkeep of this website, please note that in the message so that I
-            can earmark the funds for this project. There is a transparency
-            report below where I record the cost of keeping this site online, as
-            well as those earmarked funds.
           </p>
           <h3>Expenses</h3>
           <table className="expenses centered">
@@ -213,14 +173,6 @@ export default function Contribute({ money }) {
             remainingCredits={money.remainingCredits}
             usedCredits={money.usedCredits}
           />
-          <p>
-            I manually update the table above, so don't be startled if it takes
-            a day or so for your donation to show up here!
-          </p>
-          <p className="help-text">
-            * Credits refer to free credits for Google Cloud Platform, provided
-            by Google.
-          </p>
         </article>
       </div>
       <Footer />

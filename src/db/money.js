@@ -7,5 +7,9 @@ export const getMoney = async () => {
   const moneyDocSnapshot = await getDoc(doc(moneyCollection, "money"));
   const money = moneyDocSnapshot.data();
 
-  return money;
+  return money || { 
+    total: 0,
+    expenses: [],
+    nextMonthEstimate: 0
+  };
 };

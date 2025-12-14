@@ -4,7 +4,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.web3isgoinggreat.com",
+        hostname: "**.localhost",
         port: "",
       },
     ],

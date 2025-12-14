@@ -12,5 +12,8 @@ export const getAttribution = async () => {
   const entriesDocSnapshot = await getDoc(entriesDocRef);
   const entries = entriesDocSnapshot.data();
 
-  return { images, entries };
+  return { 
+    images: images || { entries: [] }, 
+    entries: entries || { entries: [] } 
+  };
 };

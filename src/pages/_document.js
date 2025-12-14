@@ -25,7 +25,7 @@ const Document = () => {
           rel="alternate"
           type="application/atom+xml"
           title="Subscribe to this timeline"
-          href="https://web3isgoinggreat.com/feed.xml"
+          href="https://localhost/feed.xml"
         />
       </Head>
       <body>

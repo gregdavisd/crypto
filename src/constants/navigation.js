@@ -1,27 +1,27 @@
 export const SOCIAL = [
   {
     label: "Twitter",
-    href: "https://twitter.com/web3isgreat",
+    href: "https://twitter.com/",
     icon: "fab fa-twitter",
   },
   {
     label: "Mastodon",
-    href: "https://indieweb.social/@web3isgreat",
+    href: "https://indieweb.social/",
     icon: "fab fa-mastodon",
   },
   {
     label: "Bluesky",
-    href: "https://bsky.app/profile/web3isgoinggreat.com",
+    href: "https://bsky.app/profile/",
     icon: "fab fa-bluesky",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/web3isgoinggreat/",
+    href: "https://www.instagram.com/",
     icon: "fab fa-instagram",
   },
   {
     label: "Threads",
-    href: "https://www.threads.net/@web3isgoinggreat",
+    href: "https://www.threads.net/",
     icon: "fab fa-threads",
   },
 ];
@@ -37,7 +37,7 @@ export const NAVIGATION = [
         path: "/about",
       },
       {
-        label: "What is web3?",
+        label: "What is?",
         path: "/what",
       },
       { label: "FAQ", path: "/faq" },
@@ -73,10 +73,10 @@ export const NAVIGATION = [
   },
   {
     label: "Newsletter",
-    href: "https://citationneeded.news/",
+    href: "https://localhost/news/",
   },
   {
     label: "Store",
-    href: "https://store.mollywhite.net/",
+    href: "https://localhost/store/",
   },
 ];

@@ -1,5 +1,5 @@
 {
-  "name": "web3-is-going-great",
+  "name": "site-is-going-great",
   "private": true,
   "scripts": {
     "dev": "next dev",

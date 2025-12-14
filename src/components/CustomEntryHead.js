@@ -49,13 +49,13 @@ export default function CustomEntryHead({
       <meta
         property="og:url"
         key="ogurl"
-        content={`https://web3isgoinggreat.com/single/${entry.readableId}`}
+        content={`https://localhost/single/${entry.readableId}`}
       />
       <meta property="og:title" key="ogtitle" content={title} />
       <meta
         property="og:site_name"
         key="ogsitename"
-        content="Web3 is Going Just Great"
+        content="Site is Going Just Great"
       />
       <meta
         property="og:description"
@@ -101,12 +101,12 @@ export default function CustomEntryHead({
       <link
         rel="alternate"
         type="application/json+oembed"
-        href={`https://www.web3isgoinggreat.com/api/oembed?url=https://www.web3isgoinggreat.com/single/${entry.id}&format=json`}
+        href={`https://localhost/api/oembed?url=https://localhost/single/${entry.id}&format=json`}
       />
       <link
         rel="alternate"
         type="application/xml+oembed"
-        href={`https://www.web3isgoinggreat.com/api/oembed?url=https://www.web3isgoinggreat.com/single/${entry.id}&format=xml`}
+        href={`https://localhost/api/oembed?url=https://localhost/single/${entry.id}&format=xml`}
       />
       {additionalHead}
     </Head>

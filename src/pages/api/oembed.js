@@ -7,16 +7,16 @@ const BASE_RESPONSE = {
   type: "rich",
   version: "1.0",
   author_name: "Molly White",
-  author_url: "https://www.mollywhite.net/",
+  author_url: "https://localhost/",
   provider_name: "Web3 is Going Just Great",
-  provider_url: "https://www.web3isgoinggreat.com/",
+  provider_url: "https://localhost/",
   width: 600,
   height: 600,
 };
 
 const getImageUrl = (image) => {
   if (image && image.src) {
-    return `https://primary-cdn.web3isgoinggreat.com/entryImages/${
+    return `https://primary-cdn.localhost/entryImages/${
       image.isLogo ? "logos/" : ""
     }resized/${image.src.split(".")[0]}_${image.isLogo ? "300" : "500"}.webp`;
   }
@@ -76,10 +76,7 @@ export default async function handler(req, res) {
   const domain = parsed.hostname.split(".").slice(-2).join(".");
   if (
     ![
-      "web3isgoinggreat.com",
-      "web3isgoingjustgreat.com",
-      "w3igg.com",
-      "web3isgreat.com",
+      "localhost",
     ].includes(domain)
   ) {
     res.status(404).json({ error: `Unsupported domain: ${domain}` });
@@ -107,7 +104,7 @@ export default async function handler(req, res) {
   if (id) {
     const entry = await getEntry(id);
     response.title = entry.title;
-    response.html = `<iframe title="${entry.title}" height="${response.height}" width="${response.width}" src="https://www.web3isgoinggreat.com/embed/${id}" frameborder="0" sandbox=""></iframe>`;
+    response.html = `<iframe title="${entry.title}" height="${response.height}" width="${response.width}" src="https://localhost/embed/${id}" frameborder="0" sandbox=""></iframe>`;
     const imageUrl = getImageUrl(entry.image);
     if (imageUrl) {
       response.thumbnail_url = imageUrl;
@@ -115,9 +112,9 @@ export default async function handler(req, res) {
     }
   } else {
     // Generic embed
-    response.html = `<iframe title="Web3 is Going Just Great" height="${response.height}" width="${response.width}" src="https://www.web3isgoinggreat.com/${parsed.pathname}${parsed.search}" frameborder="0" sandbox=""></iframe>`;
+    response.html = `<iframe title="Web3 is Going Just Great" height="${response.height}" width="${response.width}" src="https://localhost/${parsed.pathname}${parsed.search}" frameborder="0" sandbox=""></iframe>`;
     response.thumbnail_url =
-      "https://primary-cdn.web3isgoinggreat.com/monkey_500.webp";
+      "https://primary-cdn.localhost/monkey_500.webp";
     response.thumbnail_width = 490;
     response.thumbnail_height = 461;
   }

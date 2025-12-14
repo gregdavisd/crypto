@@ -77,14 +77,8 @@ const Header = forwardRef(function Header(
     <>
       <p>
         Created by{" "}
-        <ExternalLink href="https://www.mollywhite.net/">
-          Molly White
+        <ExternalLink href="">
         </ExternalLink>
-        . Subscribe to{" "}
-        <ExternalLink href="https://citationneeded.news/">
-          her newsletter
-        </ExternalLink>{" "}
-        for weekly recaps.
       </p>
       <ul className="social-links">
         {SOCIAL.map((link) => (
@@ -120,11 +114,10 @@ const Header = forwardRef(function Header(
           {!(windowWidth === "sm" || windowWidth === "xs") && renderImage()}
           <div className="header-content">
             <h1 ref={componentRef} tabIndex={-1}>
-              {renderMainPageLink(<span>Web3 is Going Just Great</span>)}
+              {renderMainPageLink(<span>Site is Going Just Great</span>)}
             </h1>
             <p className="subtitle">
-              ...and is definitely not an enormous grift that's pouring lighter
-              fluid on our already smoldering planet.
+
             </p>
             {windowWidth === "sm" || windowWidth === "xs"
               ? renderMobileImageAndLinks()
