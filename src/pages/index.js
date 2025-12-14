@@ -65,9 +65,9 @@ export async function getServerSideProps(context) {
       ...props,
       firstEntries,
       glossary,
-      griftTotal: metadata.griftTotal,
-      allCollections: metadata.collections,
-    },
+      griftTotal: metadata?.griftTotal || 0,
+      allCollections: metadata?.collections || {},
+      },
   };
 }
 

@@ -7,9 +7,9 @@ export const getGlossaryEntries = async () => {
 
   const entriesDocRef = doc(glossaryCollection, "entries");
   const entriesDocSnapshot = await getDoc(entriesDocRef);
-  const entries = entriesDocSnapshot.data();
+  const data = entriesDocSnapshot.data();
 
-  return { entries };
+  return { entries: data?.entries || {} };
 };
 
 export const getSortedGlossaryEntries = async () => {
